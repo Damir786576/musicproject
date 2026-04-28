@@ -1,0 +1,551 @@
+/* _mobile.css */
+/* Адаптация сайта Sirin Sings для мобильных устройств (до 768px) */
+
+/* Базовые настройки для мобильных */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .page {
+    padding: 16px 0 40px;
+    gap: 24px;
+  }
+
+  /* Скрываем огромные декоративные элементы на мобилке */
+  .page__decoration {
+    display: none;
+  }
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .header__logo {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header__logo-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header__logo-title {
+    font-size: 24px;
+  }
+
+  .header__logo-subtitle-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header__logo-subtitle {
+    font-size: 11px;
+  }
+
+  /* Навигация */
+  .nav {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  /* Hero секция */
+  .hero {
+    padding: 0 16px 16px;
+  }
+
+  .hero__container {
+    gap: 16px;
+  }
+
+  .hero__content {
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .hero__title-container {
+    padding: 0;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hero__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero__subtitle-wrapper {
+    padding: 0;
+  }
+
+  /* Карточки аудитории */
+  .audience-cards {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 16px;
+  }
+
+  .audience-card {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    padding: 16px 20px;
+    justify-content: center;
+  }
+
+  .audience-card__text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Курсы */
+  .courses-section {
+    padding: 0;
+  }
+
+  .courses-section__container {
+    flex-direction: column;
+    height: auto;
+    padding: 24px 16px;
+    gap: 16px;
+  }
+
+  .course-card {
+    width: 100%;
+  }
+
+  .course-card--light,
+  .course-card--transparent {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .course-card__title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .course-card__description {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  .course-card__meta {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .course-card__date-wrapper {
+    padding: 0;
+  }
+
+  .course-card__date {
+    font-size: 16px;
+  }
+
+  .btn--primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn__text {
+    font-size: 16px;
+  }
+
+  /* Заголовки секций */
+  .section-title-wrapper {
+    padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Секция практики */
+  .practice-section {
+    padding: 0 16px 32px;
+  }
+
+  .practice-section__container {
+    align-items: center;
+  }
+
+  .practice-section__date-wrapper {
+    padding: 0;
+  }
+
+  .practice-section__date {
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .practice-features {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .practice-feature {
+    width: 100%;
+    padding: 0;
+  }
+
+  .practice-feature__title {
+    font-size: 18px;
+  }
+
+  .practice-feature__text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .practice-feature__divider {
+    display: none;
+  }
+
+  /* О нас / преподаватели */
+  .about-section {
+    padding: 0 16px;
+  }
+
+  .about-section__container {
+    gap: 24px;
+  }
+
+  .about-section__title-wrapper {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .about-section__title {
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .teacher {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .teacher__photo {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .teacher__info {
+    min-width: auto;
+  }
+
+  .teacher__name {
+    font-size: 18px;
+    height: auto;
+    text-align: center;
+  }
+
+  .teacher__quote,
+  .teacher__bio,
+  .teacher__bio-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .teacher--reverse .teacher__content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .teacher__bio-wrapper {
+    min-width: auto;
+    padding: 0;
+  }
+
+  /* Структура календаря */
+  .calendar-structure {
+    padding: 0 16px;
+  }
+
+  .calendar-structure__header {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .calendar-structure__title {
+    font-size: 22px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .calendar-features {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .calendar-feature {
+    min-width: auto;
+  }
+
+  .calendar-feature__title {
+    font-size: 20px;
+  }
+
+  .calendar-feature__description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .calendar-feature__image {
+    height: 180px;
+  }
+
+  .calendar-preview {
+    height: 160px;
+  }
+
+  /* Цены */
+  .pricing-section {
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 20px;
+  }
+
+  .pricing-card:not(.pricing-card--vip),
+  .pricing-card--vip {
+    padding: 24px;
+  }
+
+  .pricing-card__title {
+    font-size: 18px;
+    line-height: 1.3;
+    min-height: auto;
+  }
+
+  .pricing-card__subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .pricing-card__footer {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .pricing-card__price {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .pricing-card__price-wrapper {
+    align-items: center;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 0 16px 40px;
+  }
+
+  .faq-section__title {
+    font-size: 24px;
+    height: auto;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .faq-item {
+    gap: 12px;
+  }
+
+  .faq-item__content {
+    padding: 20px 0 0;
+  }
+
+  .faq-item__question {
+    font-size: 14px;
+  }
+
+  .faq-item__toggle {
+    font-size: 28px;
+  }
+
+  /* Заключительная секция */
+  .closing-section {
+    padding: 0 16px 40px;
+  }
+
+  .closing-section__header {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .closing-section__title {
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .closing-section__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Отзывы */
+  .reviews-section {
+    padding: 0 16px 32px;
+  }
+
+  .reviews-section__container {
+    gap: 24px;
+  }
+
+  .reviews-section__authors {
+    width: 100%;
+    align-items: center;
+  }
+
+  .reviews-section__authors-title {
+    font-size: 20px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .reviews-section__title {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .reviews-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .review-card {
+    padding: 20px;
+    min-width: auto;
+  }
+
+  .review-card__author-name {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .review-card__text {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .review-card__avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Футер */
+  .footer {
+    padding: 0 16px 24px;
+  }
+
+  .footer__top-line {
+    margin-bottom: 24px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__left {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer__logo-title {
+    font-size: 24px;
+  }
+
+  .footer__nav {
+    align-items: center;
+    margin: 0;
+    gap: 16px;
+  }
+
+  .footer__nav-link {
+    font-size: 18px;
+  }
+
+  .footer__contacts {
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer__contact-text,
+  .footer__contact-link {
+    font-size: 16px;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+}
+
+/* Для очень маленьких экранов (до 480px) */
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+  }
+
+  .audience-card__text {
+    font-size: 13px;
+  }
+
+  .course-card__title {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .practice-section__date {
+    font-size: 24px;
+  }
+
+  .about-section__title {
+    font-size: 24px;
+  }
+
+  .reviews-section__title {
+    font-size: 24px;
+  }
+
+  .review-card__author-name {
+    font-size: 18px;
+  }
+}

@@ -1614,3 +1614,899 @@
   line-height: 1.2;
   margin-top: auto;
 }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1400px) {
+  .courses-section__container,
+  .pricing-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .section-title-wrapper,
+  .practice-section__date-wrapper,
+  .about-section__title-wrapper,
+  .closing-section__header {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page {
+    padding-top: 12px;
+  }
+
+  .page__decoration {
+    opacity: 0.35;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .header__logo {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .hero__content {
+    gap: 28px;
+    padding-bottom: 20px;
+    font-size: 64px;
+  }
+
+  .hero__title {
+    line-height: 1.1;
+  }
+
+  .hero__subtitle-wrapper {
+    padding: 0 24px;
+  }
+
+  .audience-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+  }
+
+  .audience-card {
+    width: 100%;
+    min-height: 92px;
+    height: auto;
+    padding: 18px 14px;
+    justify-content: center;
+  }
+
+  .audience-card__text {
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.35;
+  }
+
+  .courses-section__container,
+  .pricing-section {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .course-card--light,
+  .course-card--transparent,
+  .pricing-card,
+  .pricing-card--vip {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .course-card__meta,
+  .pricing-card__footer {
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: flex-start;
+  }
+
+  .practice-section {
+    padding: 0 24px 60px;
+  }
+
+  .practice-features {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .practice-feature {
+    width: calc(50% - 20px);
+    min-width: 280px;
+  }
+
+  .practice-feature__divider {
+    display: none;
+  }
+
+  .about-section {
+    padding: 0 24px 24px;
+  }
+
+  .about-section__title {
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .teacher {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacher__photo {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .teacher__info,
+  .teacher__bio-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .teacher--reverse .teacher__content {
+    gap: 20px;
+  }
+
+  .calendar-structure__header {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .faq-section,
+  .closing-section,
+  .reviews-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .faq-section__title,
+  .closing-section__title,
+  .reviews-section__title {
+    line-height: 1.2;
+  }
+
+  .reviews-list {
+    flex-direction: column;
+  }
+
+  .review-card {
+    min-width: 0;
+    padding: 20px;
+  }
+
+  .review-card__author-name {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .review-card__text {
+    width: 100%;
+  }
+
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footer__contacts {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    gap: 0;
+    font-size: 20px;
+  }
+
+  .hero {
+    padding: 0 16px 16px;
+  }
+
+  .header__logo {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .header__logo-text-wrapper {
+    padding-top: 0;
+  }
+
+  .header__logo-subtitle-wrapper {
+    display: none;
+  }
+
+  .nav {
+    font-size: 15px;
+    gap: 8px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero__content {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 42px;
+  }
+
+  .hero__title-container {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hero__title {
+    font-size: 42px;
+    line-height: 1.05;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .audience-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn__text {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 38px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .section-title-wrapper {
+    width: 100%;
+    padding: 0 16px 12px;
+    justify-content: center;
+  }
+
+  .practice-section {
+    padding: 0 16px 42px;
+  }
+
+  .practice-section__date-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .practice-section__date {
+    font-size: 34px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .practice-feature {
+    width: 100%;
+    min-width: 0;
+    padding-top: 0;
+  }
+
+  .about-section,
+  .faq-section,
+  .closing-section,
+  .reviews-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-section__container,
+  .reviews-section__container {
+    gap: 28px;
+  }
+
+  .about-section__title,
+  .faq-section__title,
+  .closing-section__title,
+  .reviews-section__title {
+    font-size: 42px;
+  }
+
+  .teacher__name,
+  .course-card__title,
+  .pricing-card__title {
+    font-size: 24px;
+    line-height: 1.25;
+    height: auto;
+    text-align: center;
+  }
+
+  .teacher__quote,
+  .teacher__bio,
+  .teacher__bio-text {
+    font-size: 16px;
+    line-height: 1.55;
+    text-align: center;
+  }
+
+  .teacher__info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .course-card__description,
+  .course-card__date,
+  .pricing-card__subtitle,
+  .pricing-card__price {
+    font-size: 18px;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .course-card__meta,
+  .pricing-card__footer {
+    justify-content: center;
+  }
+
+  .course-card__date-wrapper,
+  .pricing-card__price-wrapper {
+    padding-top: 0;
+  }
+
+  .calendar-structure__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .calendar-feature {
+    align-items: center;
+    text-align: center;
+  }
+
+  .calendar-feature__description {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .faq-list {
+    padding-right: 0;
+  }
+
+  .faq-item {
+    align-items: center;
+  }
+
+  .faq-item__content {
+    padding-top: 20px;
+  }
+
+  .faq-item__question {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .faq-item__toggle {
+    min-width: 30px;
+  }
+
+  .closing-section__text {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .reviews-section__authors-title {
+    font-size: 20px;
+    line-height: 1.3;
+    width: 100%;
+    text-align: center;
+  }
+
+  .reviews-section__authors {
+    width: 100%;
+    align-items: center;
+  }
+
+  .review-card__author {
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .review-card__avatar {
+    width: 72px;
+    height: 72px;
+  }
+
+  .review-card__author-name {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .review-card__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .footer {
+    padding-bottom: 24px;
+  }
+
+  .footer__top-line {
+    margin-bottom: 24px;
+  }
+
+  .footer__logo-title,
+  .footer__nav-link,
+  .footer__contact-text,
+  .footer__contact-link {
+    font-size: 16px;
+  }
+
+  .footer__left,
+  .footer__nav,
+  .footer__contacts,
+  .footer__logo,
+  .footer__socials {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero__title,
+  .section-title,
+  .about-section__title,
+  .faq-section__title,
+  .closing-section__title,
+  .reviews-section__title {
+    font-size: 30px;
+  }
+
+  .practice-section__date {
+    font-size: 28px;
+  }
+
+  .calendar-structure__title {
+    font-size: 26px;
+  }
+
+  .teacher__name,
+  .course-card__title,
+  .pricing-card__title {
+    font-size: 20px;
+  }
+
+  .hero__description,
+  .course-card__description,
+  .pricing-card__subtitle,
+  .faq-item__question,
+  .closing-section__text,
+  .review-card__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .page {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 6px 0 18px;
+    background-color: var(--color-bg-light);
+  }
+
+  .page__decoration {
+    opacity: 0.5;
+  }
+
+  .hero {
+    padding: 0 12px 12px;
+  }
+
+  .header {
+    position: relative;
+    gap: 8px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--color-accent-pink);
+  }
+
+  .header::after {
+    content: "\2261";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-accent-salmon);
+    color: var(--color-accent-pink);
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-primary);
+  }
+
+  .header__logo {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: calc(100% - 58px);
+    text-align: left;
+  }
+
+  .header__logo-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .header__logo-title {
+    font-size: 42px;
+    line-height: 1;
+    transform: scaleX(0.62);
+    transform-origin: left center;
+    white-space: nowrap;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero__content {
+    gap: 14px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+
+  .hero__title {
+    font-size: 58px;
+    line-height: 0.95;
+  }
+
+  .hero__description {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .audience-cards {
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audience-card {
+    min-height: 44px;
+    border-radius: 6px;
+    padding: 6px 8px;
+  }
+
+  .audience-card__text {
+    font-size: 10px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  .courses-section__container,
+  .pricing-section {
+    padding: 22px 10px;
+    gap: 12px;
+  }
+
+  .course-card--light,
+  .course-card--transparent,
+  .pricing-card,
+  .pricing-card--vip {
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  .course-card__title,
+  .pricing-card__title {
+    font-size: 22px;
+    line-height: 1.05;
+    text-align: left;
+  }
+
+  .course-card__description,
+  .pricing-card__subtitle {
+    font-size: 12px;
+    line-height: 1.15;
+    text-align: left;
+  }
+
+  .course-card__date,
+  .pricing-card__price {
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 800;
+  }
+
+  .course-card__meta,
+  .pricing-card__footer {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .btn--primary {
+    width: 118px;
+    min-height: 30px;
+    border-radius: 10px;
+    padding: 4px 8px;
+  }
+
+  .btn__text {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .section-title {
+    font-size: 56px;
+    line-height: 0.92;
+  }
+
+  .practice-section {
+    padding: 0 14px 30px;
+  }
+
+  .practice-section__date {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  .practice-features {
+    gap: 0;
+  }
+
+  .practice-feature {
+    width: 100%;
+    border-top: 3px solid var(--color-accent-salmon);
+    padding: 10px 0 12px;
+  }
+
+  .practice-feature:first-child {
+    border-top: 0;
+  }
+
+  .practice-feature__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .practice-feature__text {
+    font-size: 13px;
+    line-height: 1.05;
+  }
+
+  .about-section,
+  .faq-section,
+  .closing-section,
+  .reviews-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-section__title,
+  .faq-section__title,
+  .closing-section__title,
+  .reviews-section__title {
+    font-size: 56px;
+    line-height: 0.95;
+  }
+
+  .teacher {
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .teacher__photo {
+    width: 116px;
+    max-width: 116px;
+    border-radius: 20px;
+  }
+
+  .teacher__info {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .teacher__name {
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .teacher__quote,
+  .teacher__bio,
+  .teacher__bio-text {
+    font-size: 14px;
+    line-height: 1.05;
+    text-align: left;
+  }
+
+  .calendar-structure__title {
+    font-size: 56px;
+    line-height: 0.95;
+  }
+
+  .calendar-feature__title {
+    font-size: 20px;
+    line-height: 1.05;
+  }
+
+  .calendar-feature__description {
+    font-size: 10px;
+    line-height: 1.12;
+  }
+
+  .calendar-preview,
+  .calendar-feature__image {
+    height: 176px;
+    border-radius: 14px;
+  }
+
+  .faq-section__title {
+    margin-bottom: 8px;
+  }
+
+  .faq-item {
+    border-top: 3px solid var(--color-accent-salmon);
+    padding: 2px 0;
+  }
+
+  .faq-item:last-child {
+    border-bottom: 3px solid var(--color-accent-salmon);
+  }
+
+  .faq-item__content {
+    padding: 8px 0;
+  }
+
+  .faq-item__question {
+    font-size: 11px;
+    line-height: 1.05;
+  }
+
+  .faq-item__toggle {
+    font-size: 44px;
+    line-height: 1;
+    min-width: 26px;
+  }
+
+  .closing-section__text {
+    font-size: 12px;
+    line-height: 1.08;
+    text-align: left;
+  }
+
+  .reviews-list .review-card:nth-child(n + 2) {
+    display: none;
+  }
+
+  .review-card {
+    border-radius: 14px;
+    padding: 10px 12px;
+  }
+
+  .review-card__avatar {
+    width: 42px;
+    height: 42px;
+  }
+
+  .review-card__author {
+    justify-content: flex-start;
+  }
+
+  .review-card__author-name {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1;
+  }
+
+  .review-card__text {
+    font-size: 10px;
+    line-height: 1.08;
+    text-align: left;
+  }
+
+  .footer {
+    padding: 0 10px 14px;
+  }
+
+  .footer__top-line {
+    margin-bottom: 12px;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .footer__left,
+  .footer__contacts,
+  .footer__logo,
+  .footer__socials {
+    align-items: flex-start;
+    text-align: left;
+    width: auto;
+  }
+
+  .footer__nav {
+    margin: 0;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .footer__logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__logo-title,
+  .footer__nav-link,
+  .footer__contact-text,
+  .footer__contact-link {
+    font-size: 9px;
+    line-height: 1.12;
+  }
+
+  .footer__social-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
